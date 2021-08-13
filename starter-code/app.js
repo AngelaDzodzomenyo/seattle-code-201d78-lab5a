@@ -53,6 +53,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let sum = a + b + c;
+  let multiply = a * b * c;
+  let string1 = ''+ a + ' and ' + b + ' and ' + c + ' sum to ' + sum + '.';
+  let string2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply +'.';
+    return[sum, multiply, string1, string2]
 // you get back an array from sum!!!
 // make sure your get the correct index number to get the number from sum
 }
@@ -74,12 +79,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let sum = a + b + c;
-  let multiply = a * b * c;
-  let string1 = ''+ a + ' and ' + b + ' and ' + c + ' sum to ' + sum + '.';
-  let string2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply +'.';
-    return[sum, multiply, string1, string2]
+
 function sumArray(sumArr) { //eslint-disable-line
 
 }
