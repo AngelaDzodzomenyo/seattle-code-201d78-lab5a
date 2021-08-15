@@ -119,11 +119,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+let multSubTotalNumber = multiply(multArr[0], multArr[1]);
+multSubTotalNumber = multSubTotalNumber[0];
+console.log(multSubTotalNumber);
+let multTotalNumber = multiply(multSubTotalNumber, multArr[2]);
+multTotalNumber = multTotalNumber[0];
+console.log(multTotalNumber)
+let multTotalNumberString = "The numbers " + multArr[0] + "," + multArr[1] + "," + multArr[2] + " have a product of " + multTotalNumber +"."
+console.log(multTotalNumberString)
+return[multTotalNumber,multTotalNumberString]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+// testArray = [2,3,4];
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
